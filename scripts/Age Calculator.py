@@ -5,7 +5,7 @@ from datetime import datetime
 
 today = date.today()
 
-userinput = input('Enter your birth year (ex. 2021-04-24): ')
+userinput = input('Enter your birth date (ex. 2021-04-24): ')
 
 birthdate = datetime.strptime(userinput, '%Y-%m-%d')
 

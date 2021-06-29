@@ -2,9 +2,9 @@
 
 import random
 
-number = random.randrange(1, 100)
+number = random.randrange(1, 100)  # Generating a random number for user to guess
 
-guess = int(input('Guess a number between 1 and 100: '))
+guess = int(input('Guess a number between 1 and 100: '))  # Getting the users guess
 
 while guess != number:
     if guess > number:

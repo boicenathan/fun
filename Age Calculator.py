@@ -2,14 +2,20 @@
 
 from datetime import date, datetime
 
-today = date.today()  # Storing todays date
 
-userinput = input('Enter your birth date (ex. 2021-04-24): ')  # Collecting the birth date of the user
+def age_calc():
+    today = date.today()  # Storing todays date
 
-birthdate = datetime.strptime(userinput, '%Y-%m-%d')  # Cleaning the user inputed date
+    userinput = input('Enter your birth date (ex. 2021-04-24): ')  # Collecting the birth date of the user
 
-daydelta = today - birthdate.date()  # Calculating the time difference in days
+    birthdate = datetime.strptime(userinput, '%Y-%m-%d')  # Cleaning the user inputed date
 
-age = int(daydelta.days / 365.25)  # Converting to age in years
+    daydelta = today - birthdate.date()  # Calculating the time difference in days
 
-print('You are ' + str(age) + ' years old.')  # Printing the users age
+    age = int(daydelta.days / 365.25)  # Converting to age in years
+
+    print('You are ' + str(age) + ' years old.')  # Printing the users age
+
+
+if __name__ == '__main__':
+    age_calc()

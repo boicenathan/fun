@@ -132,3 +132,6 @@ dmypy.json
 # XML and IML files
 *.xml
 *.iml
+
+# Practice files
+scripts/Practice.py
